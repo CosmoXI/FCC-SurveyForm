@@ -12,34 +12,60 @@
     tenetur?</p>
 
 <form id="survey-form" action="">
+<div>
+    <label for="radio-mr">Mr. </label>
+    <input id="radio-mr" name="genre" type="radio" value="Mr">
 
-    <label id="name-label" for="name">Enter your name : </label>
-    <input id="name" type="text" placeholder="DUPONT" required>
+    <label for="radio-mrs">Mrs. </label>
+    <input id="radio-mrs" name="genre" type="radio" value="Mrs">
 
-    <label id="email-label" for="email">Enter your email address : </label>
+    <label for="radio-ms">Ms. </label>
+    <input id="radio-ms" name="genre" type="radio" value="Ms">
+
+    <label for="radio-miss">Miss. </label>
+    <input id="radio-miss" name="genre" type="radio" value="Miss">
+</div>
+<div>
+    <label id="name-label" for="name">Name : </label>
+    <input id="name" type="text" placeholder="Your name" required>
+</div>
+<div>
+    <label id="email-label" for="email">Email address : </label>
     <input id="email" type="email" placeholder="your@address.mail" required>
-
-    <label id="number-label" for="number">Select a number between 0 and 12 : </label>
-    <input id="number" type="number" placeholder="0 - 12" min="0" max="12">
-
+</div>
+<div>
+    <label id="number-label" for="number">Age : </label>
+    <input id="number" type="number" placeholder="Your age" min="0" max="99">
+</div>
+<div>
+    <label for="dropdown">Choose a subject : </label>
     <select id="dropdown" name="dropdown">
-        <option value selected disabled>Select an option</option>
-        <option value="d0">Auto</option>
-        <option value="d1">Motorbike</option>
-        <option value="d2">Bicycle</option>
-a    </select>
+        <option value selected disabled>Select a subject</option>
+        <option value="d0">Information</option>
+        <option value="d1">Subscribe</option>
+        <option value="d2">Support</option>
+    </select>
+</div>
+<div>
+    <p>Your vehicle :</p>
 
-    <label for="radio-man">Man </label>
-    <input id="radio-man" name="genre" type="radio" value="M">
+    <label for="check-bicycle">Bicycle</label>
+    <input id="check-bicycle" value="bicycle" type="checkbox">
 
-    <label for="radio-women">Women </label>
-    <input id="radio-women" name="genre" type="radio" value="W">
+    <label for="check-motorbike">Motorbike</label>
+    <input id="check-motorbike" value="motorbike" type="checkbox">
 
+    <label for="check-auto">Auto</label>
+    <input id="check-auto" value="auto" type="checkbox">
+</div>
+<div>
+    <label for="comments">Leave a comments : </label>
+    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+</div>
     <input id="submit" type="submit">
 
 </form>
 <!--
-    TODO: User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
     TODO: User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
 -->
 </body>
