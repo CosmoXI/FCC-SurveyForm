@@ -5,68 +5,53 @@
     <title>FreeCodeCamp - Survey Form</title>
 </head>
 <body>
-
 <h1 id="title">Survey Form</h1>
-<p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et facilis fuga maiores maxime nihil
-    nostrum pariatur repellat sed totam unde. Ab asperiores eligendi exercitationem, facilis libero mollitia rem sint
-    tenetur?</p>
-
 <form id="survey-form" action="">
-<div>
-    <label for="radio-mr">Mr. </label>
-    <input id="radio-mr" name="genre" type="radio" value="Mr">
-
-    <label for="radio-mrs">Mrs. </label>
-    <input id="radio-mrs" name="genre" type="radio" value="Mrs">
-
-    <label for="radio-ms">Ms. </label>
-    <input id="radio-ms" name="genre" type="radio" value="Ms">
-
-    <label for="radio-miss">Miss. </label>
-    <input id="radio-miss" name="genre" type="radio" value="Miss">
-</div>
+<h2>Sign Up</h2>
+<h3>Your basic info</h3>
 <div>
     <label id="name-label" for="name">Name : </label>
     <input id="name" type="text" placeholder="Your name" required>
 </div>
 <div>
-    <label id="email-label" for="email">Email address : </label>
-    <input id="email" type="email" placeholder="your@address.mail" required>
+    <label id="email-label" for="email">Email : </label>
+    <input id="email" type="email" placeholder="email@exemple.com" required>
 </div>
 <div>
-    <label id="number-label" for="number">Age : </label>
-    <input id="number" type="number" placeholder="Your age" min="0" max="99">
+    <label id="number-label" for="number">Code PIN : </label>
+    <input id="number" type="number" placeholder="0000" min="1000" max="9999">
 </div>
 <div>
-    <label for="dropdown">Choose a subject : </label>
+    <p>Age : </p>
+    <label for="radio-under">Under 13</label>
+    <input id="radio-under" name="age" type="radio" value="Mr">
+    <label for="radio-older">13 or older</label>
+    <input id="radio-older" name="age" type="radio" value="Mrs">
+</div>
+<h3>Your profile</h3>
+<div>
+    <label for="comments">Biography : </label>
+    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+</div>
+<div>
+    <label for="dropdown">Job Role : </label>
     <select id="dropdown" name="dropdown">
-        <option value selected disabled>Select a subject</option>
-        <option value="d0">Information</option>
-        <option value="d1">Subscribe</option>
-        <option value="d2">Support</option>
+        <option value selected disabled>Select a job</option>
+        <option value="front">Front-end</option>
+        <option value="back">Back-end</option>
+        <option value="full">Full-stack</option>
     </select>
 </div>
 <div>
-    <p>Your vehicle :</p>
-
-    <label for="check-bicycle">Bicycle</label>
-    <input id="check-bicycle" value="bicycle" type="checkbox">
-
-    <label for="check-motorbike">Motorbike</label>
-    <input id="check-motorbike" value="motorbike" type="checkbox">
-
-    <label for="check-auto">Auto</label>
-    <input id="check-auto" value="auto" type="checkbox">
+    <p>Interests :</p>
+    <label for="check-development">Development</label>
+    <input id="check-development" value="development" type="checkbox">
+    <label for="check-design">Design</label>
+    <input id="check-design" value="design" type="checkbox">
+    <label for="check-business">Business</label>
+    <input id="check-business" value="business" type="checkbox">
 </div>
-<div>
-    <label for="comments">Leave a comments : </label>
-    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
-</div>
-    <input id="submit" type="submit">
-
+    <input id="submit" type="submit" value="Sign Up">
 </form>
-<!--
-    TODO: User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
--->
 </body>
 </html>
