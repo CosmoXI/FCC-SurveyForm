@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FreeCodeCamp - Survey Form</title>
+  <meta charset="UTF-8">
+  <title>FreeCodeCamp - Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1 id="title">Survey Form</h1>
-<form id="survey-form" action="">
-<h2>Sign Up</h2>
-<h3>Your basic info</h3>
-<div>
-    <label id="name-label" for="name">Name : </label>
-    <input id="name" type="text" placeholder="Your name" required>
+
+<div class="form">
+
+  <h1 id="title">Sign Up</h1>
+
+  <form id="survey-form" action="">
+
+    <section>
+      <h2>Your basic info</h2>
+      <p>
+        <label id="name-label" for="name">Name : </label>
+        <input id="name" type="text" placeholder="Your name" required>
+      </p>
+      <p>
+        <label id="email-label" for="email">Email : </label>
+        <input id="email" type="email" placeholder="email@exemple.com" required>
+      </p>
+      <p>
+        <label id="number-label" for="number">Code PIN : </label>
+        <input id="number" type="number" placeholder="0000" min="1000" max="9999">
+      </p>
+      <fieldset>
+        <legend>Age : </legend>
+        <ul>
+          <li>
+            <input id="radio-under" name="age" type="radio" value="under">
+            <label class="label-age" for="radio-under">Under 13</label>
+          </li>
+          <li>
+            <input id="radio-older" name="age" type="radio" value="older">
+            <label class="label-age" for="radio-older">13 or older</label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section>
+      <h2>Your profile</h2>
+      <p>
+        <label for="comments">Biography : </label>
+        <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label for="dropdown">Job Role : </label>
+        <select id="dropdown" name="dropdown">
+          <option value selected disabled>Select a job</option>
+          <option value="front">Front-end</option>
+          <option value="back">Back-end</option>
+          <option value="full">Full-stack</option>
+        </select>
+      </p>
+      <fieldset>
+        <legend>Interests :</legend>
+        <p>
+          <label for="check-development">Development</label>
+          <input id="check-development" value="development" type="checkbox">
+        </p>
+        <p>
+          <label for="check-design">Design</label>
+          <input id="check-design" value="design" type="checkbox">
+        </p>
+        <p>
+          <label for="check-business">Business</label>
+          <input id="check-business" value="business" type="checkbox">
+        </p>
+      </fieldset>
+    </section>
+    <p><button id="submit" type="submit">Sign Up</button></p>
+  </form>
 </div>
-<div>
-    <label id="email-label" for="email">Email : </label>
-    <input id="email" type="email" placeholder="email@exemple.com" required>
-</div>
-<div>
-    <label id="number-label" for="number">Code PIN : </label>
-    <input id="number" type="number" placeholder="0000" min="1000" max="9999">
-</div>
-<div>
-    <p>Age : </p>
-    <label for="radio-under">Under 13</label>
-    <input id="radio-under" name="age" type="radio" value="Mr">
-    <label for="radio-older">13 or older</label>
-    <input id="radio-older" name="age" type="radio" value="Mrs">
-</div>
-<h3>Your profile</h3>
-<div>
-    <label for="comments">Biography : </label>
-    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
-</div>
-<div>
-    <label for="dropdown">Job Role : </label>
-    <select id="dropdown" name="dropdown">
-        <option value selected disabled>Select a job</option>
-        <option value="front">Front-end</option>
-        <option value="back">Back-end</option>
-        <option value="full">Full-stack</option>
-    </select>
-</div>
-<div>
-    <p>Interests :</p>
-    <label for="check-development">Development</label>
-    <input id="check-development" value="development" type="checkbox">
-    <label for="check-design">Design</label>
-    <input id="check-design" value="design" type="checkbox">
-    <label for="check-business">Business</label>
-    <input id="check-business" value="business" type="checkbox">
-</div>
-    <input id="submit" type="submit" value="Sign Up">
-</form>
+
 </body>
 </html>
