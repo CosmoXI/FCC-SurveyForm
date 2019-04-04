@@ -6,27 +6,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <div class="form">
-
   <h1 id="title">Sign Up</h1>
-
   <form id="survey-form" action="">
-
     <section>
       <h2>Your basic info</h2>
-      <p>
-        <label id="name-label" for="name">Name : </label>
-        <input id="name" type="text" placeholder="Your name" required>
-      </p>
-      <p>
-        <label id="email-label" for="email">Email : </label>
-        <input id="email" type="email" placeholder="email@exemple.com" required>
-      </p>
-      <p>
-        <label id="number-label" for="number">Code PIN : </label>
-        <input id="number" type="number" placeholder="0000" min="1000" max="9999">
-      </p>
+        <p>
+          <label id="name-label" for="name">Name : </label>
+          <input id="name" class="display__block" type="text" placeholder="Your name" required>
+        </p>
+        <p>
+          <label id="email-label" for="email">Email : </label>
+          <input id="email" class="display__block" type="email" placeholder="email@exemple.com" required>
+        </p>
+        <p>
+          <label id="number-label" for="number">Code PIN : </label>
+          <input id="number" class="display__block" type="number" placeholder="0000" min="1000" max="9999">
+        </p>
       <fieldset>
         <legend>Age : </legend>
         <ul>
@@ -41,16 +37,15 @@
         </ul>
       </fieldset>
     </section>
-
     <section>
       <h2>Your profile</h2>
       <p>
         <label for="comments">Biography : </label>
-        <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+        <textarea id="comments" class="display__block" name="comments" cols="30" rows="10"></textarea>
       </p>
       <p>
         <label for="dropdown">Job Role : </label>
-        <select id="dropdown" name="dropdown">
+        <select id="dropdown" class="display__block" name="dropdown">
           <option value selected disabled>Select a job</option>
           <option value="front">Front-end</option>
           <option value="back">Back-end</option>
@@ -61,23 +56,22 @@
         <legend>Interests :</legend>
         <ul>
           <li>
-            <label for="check-development">Development</label>
             <input id="check-development" value="development" type="checkbox">
+            <label for="check-development">Development</label>
           </li>
           <li>
-            <label for="check-design">Design</label>
             <input id="check-design" value="design" type="checkbox">
+            <label for="check-design">Design</label>
           </li>
           <li>
-            <label for="check-business">Business</label>
             <input id="check-business" value="business" type="checkbox">
+            <label for="check-business">Business</label>
           </li>
         </ul>
       </fieldset>
     </section>
-    <p><button id="submit" type="submit">Sign Up</button></p>
+    <p><button id="submit" class="display__block" type="submit">Sign Up</button></p>
   </form>
 </div>
-
 </body>
 </html>
